@@ -1,0 +1,43 @@
+.nike{
+    &-btn{
+        background-color: $color-nike;
+        color: $color-white;
+        padding: 11px;
+        margin: 0 auto;
+        width: 130px;
+        text-align: center;
+        border-radius: 22px;
+        font-weight: 700;
+        animation: fadeIn 2s;
+        cursor: pointer;
+        &:hover{
+            @keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+              }
+        }
+     
+    }
+    &-secondary{
+        &-btn{
+            background-color: #ffffff;
+            color: #1A1B1E;
+            padding: 8px;
+            margin: 0 auto;
+            width: 130px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            border-radius: 22px;
+            font-weight: 700;
+            cursor: pointer;
+            animation: fadeIn 2s;
+            &:hover{
+                @keyframes fadeIn {
+                    0% { opacity: 0; }
+                    100% { opacity: 1; }
+                  }
+            }
+        }
+    }
+}
