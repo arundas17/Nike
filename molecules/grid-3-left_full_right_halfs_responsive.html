@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            left: 0;
+            top: 0;
+        }
+
+        .main-container {
+            display: grid;
+            grid-template-areas: "main secondary"
+                "main terinary";
+            height: 100vh;
+            width: 94vw;
+            margin-left: 3vw;
+            margin-right: 3vw;
+        }
+
+        .image {
+            cursor: pointer;
+        }
+
+        .image1 {
+            grid-area: main;
+        }
+
+        .image1>img {
+            height: 100vh;
+            width: 48vw;
+            object-fit: cover;
+        }
+
+        .image2 {
+            grid-area: secondary;
+        }
+
+        .image2>img {
+            height: 50vh;
+            width: 47vw;
+        }
+
+        .image3 {
+            grid-area: terinary;
+        }
+
+        .image3>img {
+            height: 50vh;
+            width: 47vw;
+        }
+
+        @media (max-width : 700px) {
+            .main-container {
+                display: grid;
+                grid-template-areas: "main main"
+                    "secondary terinary";
+                max-height: 60vh;
+                max-width: 90vw;
+                margin-left: 5vw;
+                margin-right: 5vw;
+            }
+
+            .image1>img {
+                height: 30vh;
+                width: 90vw;
+            }
+
+            .image2>img {
+                height: 30vh;
+                width: 45vw;
+            }
+
+            .image3>img {
+                height: 30vh;
+                width: 45vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="image image1">
+            <img src="../assets/images/shoe1.jpg" alt="Shoe 1">
+        </div>
+        <div class="image image2">
+            <img src="../assets/images/shoe2.jpg" alt="Person 1">
+        </div>
+        <div class="image image3">
+            <img src="../assets/images/shoe3.jpg" alt="Shoe 2">
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector('.image1').addEventListener('click', function () {
+        window.location.href = 'https://example.com'; // Redirect to the link
+    });
+    document.querySelector('.image2').addEventListener('click', function () {
+        window.location.href = 'https://example.com'; // Redirect to the link
+    });
+    document.querySelector('.image3').addEventListener('click', function () {
+        window.location.href = 'https://example.com'; // Redirect to the link
+    });
+</script>
+
+</html>
