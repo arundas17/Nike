@@ -1,0 +1,88 @@
+.nike-classic-sportlite {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f9f9f9;
+  }
+  
+  .carousel {
+    text-align: center;
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+  
+  .carousel h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-container {
+    display: flex;
+    gap: 20px; /* Space between items */
+    width: 100%; /* Full width of the parent */
+    overflow: hidden; /* Prevent items outside the container from showing */
+    position: relative; /* Ensure positioning for children */
+    scroll-behavior: smooth; /* Smooth transitions */
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto; /* Prevent resizing of items */
+    width: 150px; /* Adjust item size */
+    height: 150px;
+    text-align: center;
+    background-color: #f0f0f0; /* Background for testing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+  }
+  
+  
+  .carousel-item div {
+    font-size: 24px;
+    color: #333; /* Ensures text is visible */
+  }
+  
+  .carousel-container img {
+    width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintains image aspect ratio */
+  }
+  
+  .carousel-item p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .prev-btn:hover, .next-btn:hover {
+    background: #eee;
+  }
+  
